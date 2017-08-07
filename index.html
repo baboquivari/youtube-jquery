@@ -4,33 +4,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YouTube App</title>
+  <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!--<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>-->
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
   <script src="js/main.js"></script> 
 </head>
 
 <body>
   <div class="wrapper">
     
-    <div class="header"></div>
+    <div class="header">
+      <img src="http://fotocdncube.gazetevatan.com/vatanmediafile/HaberIciResim/2016/05/11/--2155022.Jpeg" width="10" height="80">
+    </div>
 
     <div class="container">
       <div class="searchBar">
-        <input class="input" type="text" autofocus="true" placeholder=" Search...">  
+        <form style="height: 60px">
+          <input class="input" type="search" autofocus="true" 
+            placeholder=" Search..." value=''>  
+        </form>
       </div>
-      <div class="mainVideo"></div>
+
+      <iframe 
+        class="mainVideo" frameborder="0"
+        src="https://www.youtube.com/embed/B69MzuvPGQI" 
+        frameborder="0" allowfullscreen>
+      </iframe>
+
       <div class="suggestions">
-        <div class="related one"></div>
-        <div class="related two"></div>
-        <div class="related three"></div>    
+        <div class="related one">
+          <img class="thumb" id="1" src="https://i.ytimg.com/vi/i-rf3NCvYDI/default.jpg">
+          <span>
+            <p>
+              Floyd Mayweather vs. Conor McGregor World Tour: Showdown in New York Full Press Conference
+            </p>
+          </span>
+        </div>
+        <div class="related two">
+          <img class="thumb" id="2" src="https://i.ytimg.com/vi/R7lQN1Bre-Q/default.jpg">
+          <span>
+            <p>
+              Mayweather vs McGregor: London Press Conference
+            </p>
+          </span>
+        </div>
+        <div class="related three">
+          <img class="thumb" id="3" src="https://i.ytimg.com/vi/iVLLuuiwax0/default_live.jpg">
+          <span>
+            <p>
+              Conor McGregor All Fights
+            </p>
+          </span>
+        </div>    
       </div>
-      <div class="nowPlaying"></div>
+
     </div>
 
   </div>
 
-  <div class="footer"></div>
+  <div class="footer">
+    <p id="footerText">
+      a little thing by <a href="https://github.com/baboquivari">Tony Sian</a>
+    </p>
+  </div>
     
     
 </body>
